@@ -1,6 +1,6 @@
 #include "UbidotsMicroESP8266.h"
-#define TOKEN  "UBIDOTS_TOKEN_ID"  // Put here your Ubidots TOKEN
-#define VARIABLE_ID "UBIDOTS_VARIABLE_ID" // Put her your varibale ID
+#define TOKEN  "UBIDOTS_TOKEN_ID"  // Put here Ubidots TOKEN
+#define VARIABLE_ID "UBIDOTS_VARIABLE_ID" // Put here device Variable ID
 #define WIFISSID "FabPrivate"   // Wireless SSID
 #define PASSWORD "11235813vip"    // Wireless Password
 
@@ -53,8 +53,8 @@ void loop() {
   Serial.println(dustDensity);
 
   // post data to Ubidots
-  //client.add(VARIABLE_ID, dustDensity);
-  //client.sendAll(true);
+  client.add(VARIABLE_ID, dustDensity);
+  client.sendAll(true);
 
   delay(10000); // delay 10 seconds
 }
