@@ -1,6 +1,6 @@
 #include "UbidotsMicroESP8266.h"
-#define TOKEN  "XTkUpLeBjnCkDcKs9Xq6Jg4t02bTI1"  // Put here your Ubidots TOKEN
-#define VARIABLE_ID "58cffabe7625427aeab97082" // Put her your varibale ID
+#define TOKEN  "UBIDOTS_TOKEN_ID"  // Put here your Ubidots TOKEN
+#define VARIABLE_ID "UBIDOTS_VARIABLE_ID" // Put her your varibale ID
 #define WIFISSID "FabPrivate"   // Wireless SSID
 #define PASSWORD "11235813vip"    // Wireless Password
 
